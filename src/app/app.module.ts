@@ -47,6 +47,7 @@ import {MainTableComponent} from './main-table/main-table.component';
 import {MainDashboardComponent} from './main-dashboard/main-dashboard.component';
 import {AppComponent} from './app.component';
 import {MainNavComponent} from './main-nav/main-nav.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
     declarations: [
@@ -99,7 +100,8 @@ import {MainNavComponent} from './main-nav/main-nav.component';
         MatToolbarModule,
         MatTooltipModule,
         MatTreeModule,
-        ElModule.forRoot()
+        ElModule.forRoot(),
+        AppRoutingModule
     ],
     providers: [],
     bootstrap: [AppComponent]
