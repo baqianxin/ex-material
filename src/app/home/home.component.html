@@ -1,3 +1,14 @@
+<el-card>
+  <ng-template #header>
+    <div class="clearfix">
+      <span style="line-height: 36px;">卡片名称</span>
+      <el-button style="float: right;" type="primary">操作按钮</el-button>
+    </div>
+  </ng-template>
+  <div *ngFor="let item of [0, 1, 2, 4]" class="text item">
+    {{'列表内容 ' + item }}
+  </div>
+</el-card>
 <p>
   home works!
 </p>

@@ -49,6 +49,7 @@ import {AppComponent} from './app.component';
 import {MainNavComponent} from './main-nav/main-nav.component';
 import {AppRoutingModule} from './app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { GridComponent } from './grid/grid.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { HomeComponent } from './home/home.component';
     MainTableComponent,
     MainDashboardComponent,
     HomeComponent,
+    GridComponent,
   ],
   imports: [
     LayoutModule,
