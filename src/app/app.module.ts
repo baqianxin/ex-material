@@ -50,6 +50,7 @@ import {MainNavComponent} from './main-nav/main-nav.component';
 import {AppRoutingModule} from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { GridComponent } from './grid/grid.component';
+import { AppNavComponent } from './app-nav/app-nav.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { GridComponent } from './grid/grid.component';
     MainDashboardComponent,
     HomeComponent,
     GridComponent,
+    AppNavComponent,
   ],
   imports: [
     LayoutModule,
