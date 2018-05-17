@@ -48,13 +48,17 @@ import {MainDashboardComponent} from './main-dashboard/main-dashboard.component'
 import {AppComponent} from './app.component';
 import {MainNavComponent} from './main-nav/main-nav.component';
 import {AppRoutingModule} from './app-routing.module';
-import { HomeComponent } from './home/home.component';
-import { GridComponent } from './grid/grid.component';
-import { AppNavComponent } from './app-nav/app-nav.component';
-import { BottonSheetComponent , BottomSheetOverviewExampleSheet } from './botton-sheet/botton-sheet.component';
+import {HomeComponent} from './home/home.component';
+import {GridComponent} from './grid/grid.component';
+import {AppNavComponent} from './app-nav/app-nav.component';
+import {
+  BottonSheetComponent,
+  BottomSheetOverviewExampleSheet,
+  DialogOverviewExampleDialog
+} from './botton-sheet/botton-sheet.component';
 
 @NgModule({
-  entryComponents: [BottonSheetComponent, BottomSheetOverviewExampleSheet],
+  entryComponents: [BottonSheetComponent, BottomSheetOverviewExampleSheet, DialogOverviewExampleDialog],
   declarations: [
     AppComponent,
     MainNavComponent,
@@ -65,6 +69,7 @@ import { BottonSheetComponent , BottomSheetOverviewExampleSheet } from './botton
     AppNavComponent,
     BottonSheetComponent,
     BottomSheetOverviewExampleSheet,
+    DialogOverviewExampleDialog,
   ],
   imports: [
     LayoutModule,
