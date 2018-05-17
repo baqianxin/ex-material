@@ -51,8 +51,10 @@ import {AppRoutingModule} from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { GridComponent } from './grid/grid.component';
 import { AppNavComponent } from './app-nav/app-nav.component';
+import { BottonSheetComponent , BottomSheetOverviewExampleSheet } from './botton-sheet/botton-sheet.component';
 
 @NgModule({
+  entryComponents: [BottonSheetComponent, BottomSheetOverviewExampleSheet],
   declarations: [
     AppComponent,
     MainNavComponent,
@@ -61,6 +63,8 @@ import { AppNavComponent } from './app-nav/app-nav.component';
     HomeComponent,
     GridComponent,
     AppNavComponent,
+    BottonSheetComponent,
+    BottomSheetOverviewExampleSheet,
   ],
   imports: [
     LayoutModule,
