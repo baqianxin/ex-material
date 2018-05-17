@@ -14,10 +14,11 @@
                  (closed)="events.push('close!')" [mode]="mobileQuery.matches ? 'over' : 'side'"
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
       <mat-nav-list>
+        <a mat-list-item routerLink="/button">Mat Buttons</a>
         <a mat-list-item routerLink="/home">Link-EL Card&List</a>
         <a mat-list-item routerLink="/heroes">Mat GridList</a>
         <a mat-list-item routerLink="/tabs">Mat Tabs&IconLabel</a>
-        <a mat-list-item routerLink="/dialog">Mat BottonSheet&Dialog</a>
+        <a mat-list-item routerLink="/dialog">Mat Popups&Modals</a>
 
       </mat-nav-list>
     </mat-sidenav>

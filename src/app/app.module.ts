@@ -50,12 +50,12 @@ import {MainNavComponent} from './main-nav/main-nav.component';
 import {AppRoutingModule} from './app-routing.module';
 import {HomeComponent} from './home/home.component';
 import {GridComponent} from './grid/grid.component';
-import {AppNavComponent} from './app-nav/app-nav.component';
 import {
   BottonSheetComponent,
   BottomSheetOverviewExampleSheet,
   DialogOverviewExampleDialog
 } from './botton-sheet/botton-sheet.component';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   entryComponents: [BottonSheetComponent, BottomSheetOverviewExampleSheet, DialogOverviewExampleDialog],
@@ -66,10 +66,10 @@ import {
     MainDashboardComponent,
     HomeComponent,
     GridComponent,
-    AppNavComponent,
     BottonSheetComponent,
     BottomSheetOverviewExampleSheet,
     DialogOverviewExampleDialog,
+    ButtonComponent,
   ],
   imports: [
     LayoutModule,
