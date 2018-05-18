@@ -1,3 +1,4 @@
+import 'hammerjs';
 import {CdkTableModule} from '@angular/cdk/table';
 import {HttpClientModule} from '@angular/common/http';
 import {NgModule} from '@angular/core';
@@ -56,6 +57,7 @@ import {
   DialogOverviewExampleDialog
 } from './botton-sheet/botton-sheet.component';
 import { ButtonComponent } from './button/button.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   entryComponents: [BottonSheetComponent, BottomSheetOverviewExampleSheet, DialogOverviewExampleDialog],
@@ -70,6 +72,7 @@ import { ButtonComponent } from './button/button.component';
     BottomSheetOverviewExampleSheet,
     DialogOverviewExampleDialog,
     ButtonComponent,
+    FormComponent,
   ],
   imports: [
     LayoutModule,

@@ -10,22 +10,30 @@
   </mat-toolbar>
   <mat-sidenav-container class="example-container">
 
-    <mat-sidenav #sidenav [(opened)]="opened" (opened)="events.push('open!')"
-                 (closed)="events.push('close!')" [mode]="mobileQuery.matches ? 'over' : 'side'"
-                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+    <mat-sidenav #sidenav
+                 [(opened)]="opened"
+                 (opened)="events.push('open!')"
+                 (closed)="events.push('close!')"
+                 [mode]="mobileQuery.matches ? 'over' : 'side'"
+                 [fixedInViewport]="mobileQuery.matches"
+                 fixedTopGap="56">
       <mat-nav-list>
         <a mat-list-item routerLink="/button">Mat Buttons</a>
         <a mat-list-item routerLink="/home">Link-EL Card&List</a>
         <a mat-list-item routerLink="/heroes">Mat GridList</a>
         <a mat-list-item routerLink="/tabs">Mat Tabs&IconLabel</a>
         <a mat-list-item routerLink="/dialog">Mat Popups&Modals</a>
-
+        <a mat-list-item routerLink="/form">Mat Form&Input</a>
       </mat-nav-list>
     </mat-sidenav>
 
     <mat-sidenav-content>
       <router-outlet></router-outlet>
-      <div *ngIf="true">It's working!</div>
+
+
+      <div *ngIf="true" class="grid-container"><h4>
+        OOM~ It's working!
+      </h4></div>
     </mat-sidenav-content>
 
   </mat-sidenav-container>

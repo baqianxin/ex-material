@@ -1,0 +1,49 @@
+<div class="grid-container">
+  <mat-card>
+    <mat-card-header>
+      <div><h2>Form</h2></div>
+    </mat-card-header>
+    <mat-card-content>
+
+
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="State" aria-label="State" [matAutocomplete]="auto" [formControl]="stateCtrl">
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let state of filteredStates | async" [value]="state.name">
+              <img style="vertical-align:middle;" aria-hidden src="{{state.flag}}" height="25"/>
+              <span>{{ state.name }}</span> |
+              <small>Population: {{state.population}}</small>
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+
+        <br/>
+
+        <mat-slide-toggle
+          [checked]="stateCtrl.disabled"
+          (change)="stateCtrl.disabled ? stateCtrl.enable() : stateCtrl.disable()">
+          Disable Input?
+        </mat-slide-toggle>
+      </form>
+    </mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-header><h3>Group</h3></mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="stateForm">
+        <mat-form-field>
+          <input type="text" matInput placeholder="States Group" formControlName="stateGroup" required
+                 [matAutocomplete]="autoGroup"/>
+          <mat-autocomplete #autoGroup="matAutocomplete">
+            <mat-optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.letter">
+              <mat-option *ngFor="let name of group.names" [value]="name">
+                {{ name }}
+              </mat-option>
+            </mat-optgroup>
+          </mat-autocomplete>
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
