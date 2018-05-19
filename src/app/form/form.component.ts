@@ -1,6 +1,5 @@
 import {Observable} from 'rxjs';
 import {Component, OnInit} from '@angular/core';
-import {FormControl} from '@angular/forms';
 import {FormGroup, FormBuilder, FormControl} from '@angular/forms';
 import {startWith, map} from 'rxjs/operators';
 

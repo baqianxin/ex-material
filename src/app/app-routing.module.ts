@@ -6,6 +6,8 @@ import {GridComponent} from './grid/grid.component';
 import {BottonSheetComponent} from "./botton-sheet/botton-sheet.component";
 import {ButtonComponent} from './button/button.component';
 import {FormComponent} from "./form/form.component";
+import {CheckboxComponent} from "./checkbox/checkbox.component";
+import {DatepickerComponent} from "./datepicker/datepicker.component";
 
 const routes: Routes = [
   {path: 'heroes', component: MainDashboardComponent},
@@ -13,6 +15,8 @@ const routes: Routes = [
   {path: 'dialog', component: BottonSheetComponent},
   {path: 'button', component: ButtonComponent},
   {path: 'form', component: FormComponent},
+  {path: 'checkbox', component: CheckboxComponent},
+  {path: 'datepicker', component: DatepickerComponent},
   {path: 'tabs', component: GridComponent}
 
 ];

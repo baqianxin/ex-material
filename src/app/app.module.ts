@@ -58,6 +58,8 @@ import {
 } from './botton-sheet/botton-sheet.component';
 import { ButtonComponent } from './button/button.component';
 import { FormComponent } from './form/form.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import { DatepickerComponent } from './datepicker/datepicker.component';
 
 @NgModule({
   entryComponents: [BottonSheetComponent, BottomSheetOverviewExampleSheet, DialogOverviewExampleDialog],
@@ -73,6 +75,8 @@ import { FormComponent } from './form/form.component';
     DialogOverviewExampleDialog,
     ButtonComponent,
     FormComponent,
+    CheckboxComponent,
+    DatepickerComponent,
   ],
   imports: [
     LayoutModule,
