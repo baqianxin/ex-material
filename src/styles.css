@@ -3,64 +3,47 @@
 @import "~element-angular/theme/index.css";
 
 html, body, app-root {
-  height: 100%;
-  font-family: Roboto, Arial, sans-serif;
-  margin: 0;
+    height: 100%;
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
 }
 
 .basic-container {
-  padding: 8px;
+    padding: 8px;
 }
 
 .version-info {
-  font-size: 8pt;
-  float: right;
+    font-size: 8pt;
+    float: right;
 }
 
 .grid-container {
-  margin: 20px;
+    margin: 20px;
 }
 
 .dashboard-card {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
 }
 
 .more-button {
-  position: absolute;
-  top: 5px;
-  right: 10px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
 }
 
 .dashboard-card-content {
-  text-align: center;
-}
-
-mat-grid-tile {
-  background: lightblue;
+    text-align: center;
 }
 
 .grid-container {
-  margin: 20px;
+    margin: 20px;
 }
 
-.dashboard-card {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-}
-
-.more-button {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-}
-
-.dashboard-card-content {
-  text-align: center;
+.padding-5 {
+    width: 100%;
+    padding-bottom: 10px;
 }
